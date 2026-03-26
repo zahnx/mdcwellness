@@ -33,7 +33,7 @@ export default function Testimonials() {
               Real Results
             </span>
             <h2 className="font-headline text-4xl md:text-5xl mt-4 text-on-surface">
-              Voices of the Sanctuary
+              What People Are Saying
             </h2>
           </div>
           <div className="flex items-center gap-2 text-primary font-bold">

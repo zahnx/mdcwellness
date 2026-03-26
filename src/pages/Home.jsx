@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <main className="pt-20">
+      <main className="">
         <Hero />
         <ServicesPreview />
         <HowItWorks />
