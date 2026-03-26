@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: add selection style */
+::selection {
+  background-color: theme("colors.primary");
+  color: theme("colors.on-primary");
+}
