@@ -10,11 +10,12 @@ export default function Footer() {
         {/* Logo & About */}
         <div>
           <h3 className="font-headline text-2xl mb-4 text-on-surface">
-            Beauty & Wellness Hub
+            MDC Beauty & Wellness Hub
           </h3>
           <p className="text-on-surface-variant leading-relaxed">
-            Elevating your wellness experience with curated services for body,
-            mind, and skin. Your sanctuary awaits.
+            Experience tranquility with our curated wellness journeys. Speed,
+            convenience, and professional care designed to restore your inner
+            balance.
           </p>
         </div>
 
@@ -70,19 +71,19 @@ export default function Footer() {
           <div className="flex items-center gap-2 mb-2">
             <MapPin size={18} className="text-primary" />
             <span className="text-on-surface-variant leading-relaxed">
-              123 Wellness St, Imus, Philippines
+              [Your address here]
             </span>
           </div>
           <div className="flex items-center gap-2 mb-2">
             <Mail size={18} className="text-primary" />
             <span className="text-on-surface-variant leading-relaxed">
-              hello@beautywellnesshub.ph
+              [Your mail here]
             </span>
           </div>
           <div className="flex items-center gap-2 mb-4">
             <Phone size={18} className="text-primary" />
             <span className="text-on-surface-variant leading-relaxed">
-              +63 912 345 6789
+              0912-345-6789
             </span>
           </div>
 
