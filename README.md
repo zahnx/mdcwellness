@@ -59,7 +59,7 @@ Build for production:
 
 npm run build
 
-**## SEO & Meta Optimization**
+## SEO & Meta Optimization
 
 This project includes:
 - Meta descriptions and keywords
@@ -67,12 +67,11 @@ This project includes:
 - Twitter card integration
 - Favicon and PWA manifest setup
 
-**## Preview
-**
-<img width="997" height="621" alt="image" src="https://github.com/user-attachments/assets/c445b6c8-2033-4219-a19b-98994fda875e" />
-<img width="307" height="837" alt="image" src="https://github.com/user-attachments/assets/825d71a0-b6ce-40b3-8b13-dc9617ff5865" />
+## Preview
 
-**## Future Improvements**
+<img width="997" height="621" alt="image" src="https://github.com/user-attachments/assets/c445b6c8-2033-4219-a19b-98994fda875e" />
+
+## Future Improvements
 - Create dedicated pages for each service (Massage, Facials, Spa Packages)
 - Online booking and payment integration using Stripe
 - Contact form with email integration for lead generation
