@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -23,9 +24,12 @@ export default function Hero() {
               Book Now <ArrowRight size={16} />
             </button>
 
-            <button className="bg-secondary-container/40 text-secondary px-10 py-4 rounded-full font-label font-bold tracking-widest uppercase text-xs hover:bg-secondary-container/60 transition-colors flex items-center gap-2">
+            <Link
+              to="/services"
+              className="bg-secondary-container/40 text-secondary px-10 py-4 rounded-full font-label font-bold tracking-widest uppercase text-xs hover:bg-secondary-container/60 transition-colors flex items-center gap-2"
+            >
               View Services <ArrowRight size={16} />
-            </button>
+            </Link>
           </div>
         </div>
 
