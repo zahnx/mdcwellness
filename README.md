@@ -39,39 +39,24 @@ Velora Wellness Spa is a front-end web application that highlights spa services 
 
 ---
 
-## Project Structure
-
-src/
-├── components/ # Reusable UI components
-├── pages/ # Main pages (Home, Services, About, Contact)
-├── assets/ # Images and static assets
-├── App.jsx # Root component
-
-
----
-
 ## Installation & Setup
 
 Clone the repository:
 
-```bash
 git clone https://github.com/your-username/velora-wellness.git
 cd velora-wellness
 
 Install dependencies:
 
-```bash
 npm install
 
 
 Run development server:
 
-```bash
 npm run dev
 
 Build for production:
 
-```bash
 npm run build
 
 **## SEO & Meta Optimization**
