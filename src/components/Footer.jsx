@@ -1,123 +1,95 @@
 // src/components/Footer.jsx
 import React from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
-import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+
+// Company Info (env or fallback)
+const COMPANY_NAME = import.meta.env.VITE_COMPANY_NAME || "The Sanctuary";
+const COMPANY_YEAR = new Date().getFullYear();
+
+// Footer links
+const exploreLinks = [
+  { name: "Home", path: "/" },
+  { name: "Services", path: "/services" },
+  { name: "About Us", path: "/about" },
+];
+
+const connectLinks = [
+  { name: "Contact Us", path: "/contact" },
+  { name: "Privacy Policy", path: "/privacy" },
+  { name: "Terms & Conditions", path: "/terms" },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-surface-container-high py-16 px-8">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-        {/* Logo & About */}
-        <div>
-          <h3 className="font-headline text-2xl mb-4 text-on-surface">
-            MDC Beauty & Wellness Hub
-          </h3>
-          <p className="text-on-surface-variant leading-relaxed">
-            Experience tranquility with our curated wellness journeys. Speed,
-            convenience, and professional care designed to restore your inner
-            balance.
+    <footer className="bg-surface dark:bg-stone-900 w-full rounded-t-[24px]">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 px-12 py-16">
+        {/* Logo / About */}
+        <div className="col-span-2 md:col-span-1">
+          <div className="font-headline text-xl text-[#39635f] dark:text-[#527c78] mb-6">
+            {COMPANY_NAME}
+          </div>
+          <p className="text-stone-500 text-sm leading-relaxed max-w-xs">
+            Your destination for holistic restoration and professional wellness
+            in the heart of the city.
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="font-bold text-on-surface mb-4">Quick Links</h4>
-          <ul className="space-y-2">
-            <li>
-              <a href="/" className="hover:text-primary transition-colors">
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/services"
-                className="hover:text-primary transition-colors"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:text-primary transition-colors">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="hover:text-primary transition-colors"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="/privacy"
-                className="hover:text-primary transition-colors"
-              >
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="/terms" className="hover:text-primary transition-colors">
-                Terms & Conditions
-              </a>
-            </li>
-          </ul>
+        {/* Explore Links */}
+        <div className="flex flex-col gap-4">
+          <span className="font-body text-sm uppercase tracking-widest text-stone-900 font-bold mb-2">
+            Explore
+          </span>
+          {exploreLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="font-body text-sm tracking-widest text-stone-500 hover:text-[#39635f]  decoration-[#39635f] underline-offset-4 transition-all duration-300"
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
 
-        {/* Contact Info */}
-        <div>
-          <h4 className="font-bold text-on-surface mb-4">Contact</h4>
-          <div className="flex items-center gap-2 mb-2">
-            <MapPin size={18} className="text-primary" />
-            <span className="text-on-surface-variant leading-relaxed">
-              [Your address here]
-            </span>
-          </div>
-          <div className="flex items-center gap-2 mb-2">
-            <Mail size={18} className="text-primary" />
-            <span className="text-on-surface-variant leading-relaxed">
-              [Your mail here]
-            </span>
-          </div>
-          <div className="flex items-center gap-2 mb-4">
-            <Phone size={18} className="text-primary" />
-            <span className="text-on-surface-variant leading-relaxed">
-              0912-345-6789
-            </span>
-          </div>
+        {/* Connect Links */}
+        <div className="flex flex-col gap-4">
+          <span className="font-body text-sm uppercase tracking-widest text-stone-900 font-bold mb-2">
+            Connect
+          </span>
+          {connectLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="font-body text-sm tracking-widest text-stone-500 hover:text-[#39635f]  decoration-[#39635f] underline-offset-4 transition-all duration-300"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </div>
 
-          {/* Social Media */}
-          <div className="flex gap-4 mt-2">
-            <a
-              href="#"
-              className="hover:text-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <FaFacebookF size={20} />
-            </a>
-            <a
-              href="#"
-              className="hover:text-primary transition-colors"
-              aria-label="Instagram"
-            >
-              <FaInstagram size={20} />
-            </a>
-            <a
-              href="#"
-              className="hover:text-primary transition-colors"
-              aria-label="TikTok"
-            >
-              <FaTiktok size={20} />
-            </a>
+        {/* Newsletter */}
+        <div className="col-span-2 md:col-span-1">
+          <span className="font-manrope text-sm uppercase tracking-widest text-stone-900 font-bold mb-4 block">
+            Newsletter
+          </span>
+          <div className="flex border-b border-stone-300 pb-2">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="bg-transparent border-none text-sm w-full focus:ring-0 placeholder:text-stone-400"
+            />
+            <button className="text-[#39635f] flex items-center justify-center">
+              <ArrowRight size={20} />
+            </button>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="mt-12 text-center text-on-surface-variant text-xs">
-        &copy; {new Date().getFullYear()} Beauty & Wellness Hub. All rights
-        reserved.
+      <div className="max-w-7xl mx-auto px-12 py-8 border-t border-stone-200/50 text-center">
+        <span className="font-manrope text-xs uppercase tracking-[0.2em] text-stone-400">
+          © {COMPANY_YEAR} {COMPANY_NAME}. All rights reserved.
+        </span>
       </div>
     </footer>
   );

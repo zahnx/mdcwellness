@@ -60,7 +60,7 @@ export default function About() {
           alt="Peaceful wellness spa interior"
         />
         <div className="relative z-20 text-center px-6 max-w-4xl">
-          <h1 className="font-notoSerif text-5xl md:text-7xl text-white mb-6 drop-shadow-sm tracking-tight">
+          <h1 className="font-headline text-5xl md:text-7xl text-white mb-6 drop-shadow-sm tracking-tight">
             Our Story
           </h1>
           <p className="font-manrope text-lg md:text-xl text-white/90 font-light tracking-wide max-w-2xl mx-auto leading-relaxed">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../data/navLinks";
 import { Menu, X } from "lucide-react";
 
@@ -13,9 +13,9 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50">
       <div className="flex justify-between items-center px-6 md:px-8 py-4  mx-auto bg-[#fcf9f5]/80 backdrop-blur-md shadow-sm">
         {/* Logo */}
-        <div className="font-headline italic text-2xl text-[#39635f]">
+        <Link to="/" className="font-headline italic text-2xl text-[#39635f]">
           {COMPANY_NAME}
-        </div>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-10 items-center">
