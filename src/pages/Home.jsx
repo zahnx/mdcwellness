@@ -10,14 +10,12 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
-        <main className="">
-          <Hero />
-          <ServicesPreview />
-          <HowItWorks />
-          <Testimonials />
-        </main>
-      </div>
+      <main className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed pt-20">
+        <Hero />
+        <ServicesPreview />
+        <HowItWorks />
+        <Testimonials />
+      </main>
     </>
   );
 }

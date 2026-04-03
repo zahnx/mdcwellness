@@ -34,7 +34,7 @@ const contactItems = [
 
 export default function Contact() {
   return (
-    <main className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <main className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed pt-20">
       {/* Hero Section */}
       <header className="relative w-full h-[614px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-primary-container/20 z-10"></div>

@@ -3,14 +3,14 @@ import React from "react";
 import { Outlet } from "react-router-dom"; // <-- important
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import DisclaimerPopover from "../components/DisclaimerPopover";
 
 export default function AppLayout() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
-        <Outlet /> {/* <-- This is where the child pages will render */}
-      </main>
+      <Outlet />
+      <DisclaimerPopover />
       <Footer />
     </>
   );

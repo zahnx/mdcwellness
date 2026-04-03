@@ -49,7 +49,7 @@ export default function About() {
   ];
 
   return (
-    <main className=" font-body bg-surface text-on-surface">
+    <main className=" font-body bg-surface text-on-surface pt-20">
       {/* Hero Section */}
       {/* Hero Section */}
       <section className="relative w-full h-[614px] flex items-center justify-center overflow-hidden">

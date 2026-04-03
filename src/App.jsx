@@ -12,7 +12,7 @@ import AppLayout from "./layout/AppLayout";
 
 export default function App() {
   return (
-    <div className="font-body bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <>
       <ScrollToTop />
       <Routes>
         {/* Routes that use the common layout */}
@@ -26,6 +26,6 @@ export default function App() {
         {/* 404 page without layout */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
