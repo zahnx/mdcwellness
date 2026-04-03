@@ -63,6 +63,7 @@ Install dependencies:
 ```bash
 npm install
 
+
 Run development server:
 
 ```bash
@@ -72,8 +73,6 @@ Build for production:
 
 ```bash
 npm run build
-
-
 
 **## SEO & Meta Optimization**
 
